@@ -1,0 +1,46 @@
+{
+  "app": {
+    "name": "Medicine Portfolio"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Welcome to Medicine App"
+  },
+  "content": {
+    "description": "1) The Tailwind configuration is working",
+    "description2": "2) i18n is working",
+    "description3": "3) Prettier implemented",
+    "description4": "4) ESLint implemented"
+  },
+  "buttons": {
+    "sr": "Switch to Serbian",
+    "en": "Switch to English"
+  },
+  "pages": {
+    "about_title": "Who I Am and What I Do",
+    "about_text": "This section will detail my professional experience, skills, and goals.",
+    "services_title": "My Key Services",
+    "services_text": "Here you can explore case studies and examples of my work.",
+
+    "contact_title": "Get in Touch",
+    "contact_text": "I am here to answer your questions and discuss your needs regarding philotherapy."
+  },
+  "footer": {
+    "address_line1": "123 Research Blvd, Health City",
+    "address_line2": "CA 90210, USA",
+    "email": "contact@medicineportfolio.com",
+    "social_title": "Connect With Me",
+    "nav_title": "Quick Links"
+  },
+  "form": {
+    "name_label": "Your Name",
+    "email_label": "Your Email",
+    "message_label": "Your Message",
+    "submit_button": "Send Message"
+  }
+}

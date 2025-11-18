@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #f9fafb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #eef2ff;
+  font-family: 'Roboto', sans-serif;
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link {
+  /* ... */
+}
+.nav-link::before {
+  /* ... */
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f9fafb;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #4b5563;
+    border-radius: 9999px;
+    border: 2px solid #f9fafb;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #374151;
+  }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 #f9fafb;
+  }
+}
+
+@media (min-width: 1536px) {
+  @layer base {
+    /* ... */
+  }
+}
