@@ -9,12 +9,12 @@ export default {
         primary: {
           50: '#eef2ff',
           100: '#e0e7ff',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          900: '#3730a3',
+          500: '#f1a363ff',
+          600: '#e58046ff',
+          700: '#ca6938ff',
+          900: '#a37330ff',
         },
-        secondary: '#06b6d4',
+        secondary: '#cad406ff',
       },
 
       fontFamily: {
