@@ -1,25 +1,28 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { SectionWrapper } from '../../components/Wrappers/SectionWrapper';
+import ExpertiseAndExperiance from './ExpertiesAndExperiance/ExpertiesAndExperiance';
+import Kinesitherapy from './Kinesitherapy/Kinesitherapy';
+import Massage from './Massage/Massage';
+import TerapeuticSkills from './TerapeuticSkills/TerapeuticSkills';
 
-const Services: React.FC = () => {
-  const { t } = useTranslation();
-
+const Services = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center p-4 sm:p-8 pt-20">
-      <div className="bg-white p-8 sm:p-12 rounded-2xl shadow-xl max-w-2xl w-full text-center border border-primary-100">
-        <h1 className="text-3xl sm:text-4xl-custom font-heading font-extrabold text-primary-700 mb-6 leading-tight">
-          {t('pages.services_title')}
-        </h1>
+    <>
+      <SectionWrapper id="hero" className="bg-yellow-600">
+        <ExpertiseAndExperiance />
+      </SectionWrapper>
 
-        <p className="text-lg-custom text-primary-900 font-semibold mb-4 px-2">
-          {t('pages.services_text')}
-        </p>
+      <SectionWrapper id="hero" className="bg-yellow-500">
+        <Kinesitherapy />
+      </SectionWrapper>
 
-        <p className="text-base-custom text-gray-600 mt-6">
-          Prikazujemo listu servisa uskoro.
-        </p>
-      </div>
-    </div>
+      <SectionWrapper id="hero" className="bg-yellow-400">
+        <Massage />
+      </SectionWrapper>
+
+      <SectionWrapper id="hero" className="bg-yellow-300">
+        <TerapeuticSkills />
+      </SectionWrapper>
+    </>
   );
 };
 

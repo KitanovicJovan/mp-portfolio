@@ -12,7 +12,7 @@ function AppContent() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-grow pt-20">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

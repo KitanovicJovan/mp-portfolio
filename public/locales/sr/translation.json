@@ -11,36 +11,21 @@
   "header": {
     "title": "Dobrodošli u Aplikaciju za Medicinu"
   },
-  "content": {
-    "description": "1) Tailwind konfiguracija radi",
-    "description2": "2) i18n radi",
-    "description3": "3) Prettier postavljen",
-    "description4": "4) ESLint postavljen"
+  "hero": {
+    "title": "Inovativna Medicinska Rešenja",
+    "subtitle": "Povezivanje pacijenata sa najboljim zdravstvenim profesionalcima."
   },
+
   "buttons": {
     "sr": "Prebaci na Srpski",
     "en": "Prebaci na Engleski"
   },
-  "pages": {
-    "about_title": "Ko sam i šta radim",
-    "about_text": "Ova sekcija će detaljno opisati moje profesionalno iskustvo, veštine i ciljeve.",
-    "services_title": "Moji ključni servisi",
-    "services_text": "Ovde možete istražiti studije slučaja i primere mog rada.",
 
-    "contact_title": "Stupite u Kontakt",
-    "contact_text": "Tu sam da odgovorim na vaša pitanja i razmotrimo vaše potrebe u vezi sa filoterapijom."
-  },
   "footer": {
     "address_line1": "Istraživački Bulevar 123, Zdravstveni Grad",
     "address_line2": "11000 Beograd, Srbija",
     "email": "kontakt@medicinaportfolio.com",
     "social_title": "Povežite se",
     "nav_title": "Brzi Linkovi"
-  },
-  "form": {
-    "name_label": "Vaše Ime",
-    "email_label": "Vaš Email",
-    "message_label": "Vaša Poruka",
-    "submit_button": "Pošalji Poruku"
   }
 }

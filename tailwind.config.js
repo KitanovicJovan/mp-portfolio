@@ -4,17 +4,39 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      xxs: '375px', // Manji mobilni telefoni
+      xs: '480px', // Veći mobilni telefoni
+      sm: '640px', // Standardni mali ekrani/Tableti
+      md: '768px', // Tableti/Manji laptopovi
+      lg: '1024px', // Laptopovi
+      xl: '1280px', // Veći laptopovi
+      '2xl': '1536px', // Standardni desktop
+      uw: '1920px', // Ultra Wide (Full HD)
+      '3xl': '2560px', // QHD/Veliki monitori
+      '4xl': '3840px', // 4K ekrani
+    },
+
     extend: {
       colors: {
         primary: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          500: '#f1a363ff',
-          600: '#e58046ff',
-          700: '#ca6938ff',
-          900: '#a37330ff',
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          900: '#082f49',
         },
-        secondary: '#cad406ff',
+        secondary: {
+          DEFAULT: '#10b981',
+          500: '#10b981',
+          700: '#047857',
+        },
+        accent: {
+          DEFAULT: '#f97316',
+          500: '#f97316',
+          700: '#ea580c',
+        },
       },
 
       fontFamily: {
@@ -23,14 +45,14 @@ export default {
       },
 
       fontSize: {
-        'xs-custom': '0.75rem',
-        'sm-custom': '0.875rem',
-        'base-custom': '1rem',
-        'lg-custom': '1.125rem',
-        'xl-custom': '1.25rem',
-        '2xl-custom': '1.5rem',
-        '3xl-custom': '1.875rem',
-        '4xl-custom': '2.25rem',
+        xs: '0.75rem',
+        sm: '0.875rem',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
       },
     },
   },
