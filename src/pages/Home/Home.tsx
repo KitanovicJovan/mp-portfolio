@@ -7,7 +7,8 @@ import Summary from './Summary/Summary';
 const Home = () => {
   return (
     <>
-      <SectionWrapper id="hero" className="bg-red-600">
+      <SectionWrapper id="hero" className="bg-red-600 min-h-screen">
+        {' '}
         <Hero />
       </SectionWrapper>
 

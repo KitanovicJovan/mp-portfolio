@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "Medicine Portfolio"
+    "name": "MP Portfolio"
   },
   "nav": {
     "home": "Home",
@@ -12,15 +12,18 @@
     "title": "Welcome to Medicine App"
   },
   "hero": {
+    "tagline": "The Future of Health",
     "title": "Innovative Medical Solutions",
-    "subtitle": "Connecting patients with the best healthcare professionals."
+    "subtitle": "Connecting patients with the best healthcare professionals.",
+    "primary_cta": "Explore Services",
+    "secondary_cta": "Get in Touch",
+    "visual_focus": "Your Health, Our Priority",
+    "visual_subtitle": "Fizio Platform"
   },
-
   "buttons": {
     "sr": "Switch to Serbian",
     "en": "Switch to English"
   },
-
   "footer": {
     "address_line1": "123 Research Blvd, Health City",
     "address_line2": "CA 90210, USA",

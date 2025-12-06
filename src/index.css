@@ -4,6 +4,142 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ================================================= */
+/* HERO SEKCIJA: LUDA MEDICINSKA ANIMACIJA */
+/* ================================================= */
+
+/* 1. PULSIRANJE (Neuro-impuls efekat) */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); /* secondary boja */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 15px 5px rgba(16, 185, 129, 0.8);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 3s ease-in-out infinite;
+}
+.pulse-fast-animation {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+.pulse-slow-animation {
+  animation: pulse 4s ease-in-out infinite;
+}
+.delay-1000 {
+  animation-delay: 1s;
+}
+.delay-1500 {
+  animation-delay: 1.5s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* 2. BOUNCE FADE IN (Za tekst, poboljšava responsivnost na mobilnom) */
+@keyframes bounceFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bounce-fade-in {
+  opacity: 0; /* Osiguraj da je inicijalno skriveno */
+  animation: bounceFadeIn 0.8s ease-out forwards;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+}
+.delay-800 {
+  animation-delay: 0.8s;
+}
+
+/* 3. ZOOM IN (Za vizuelni mockup/ilustraciju) */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(4deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(4deg);
+  }
+}
+.zoom-in-animation {
+  animation: zoomIn 1s ease-out forwards;
+}
+
+/* 4. ANUMACIJA STETOSKOP LINIJA */
+@keyframes drawLine {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.stetho-line-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(to right, transparent 50%, theme('colors.primary.700') 50%)
+      0 0 / 20px 2px,
+    linear-gradient(to bottom, transparent 50%, theme('colors.primary.700') 50%)
+      0 0 / 2px 20px;
+  background-repeat: repeat;
+  opacity: 0.1;
+  transform: rotate(15deg);
+}
+
+.stetho-line-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* ISPRAVKA GRESKE: Dodata nijansa '500' na secondary */
+  border-top: 2px dashed theme('colors.secondary.500');
+  border-left: 2px dashed theme('colors.secondary.500');
+  opacity: 0.1;
+  transform: scale(1.1) rotate(-10deg);
+}
+
+/* 5. Opšte klase za Hero sekciju */
+.perspective-3d {
+  transform-style: preserve-3d;
+}
+
+/* ================================================= */
+/* OSNOVNI STILOVI (Originalni) */
+/* ================================================= */
+
 *,
 *::before,
 *::after {
